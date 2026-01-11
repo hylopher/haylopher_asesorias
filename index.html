@@ -143,6 +143,88 @@ li::before {
     color: #6B7280;
     margin-bottom: 0.6rem;
 }
+.mentorship-section {
+    background-color: #F5F5F0; /* beige */
+    padding: 3.5rem 1.5rem;
+}
+
+.mentorship-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #111827;
+}
+
+.mentorship-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mentorship-card {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    padding: 2.2rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.mentorship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.mentorship-tag {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4B5563;
+}
+
+.mentorship-price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #3F6212; /* verde olivo */
+}
+
+.mentorship-desc {
+    font-size: 1rem;
+    color: #374151;
+    margin-bottom: 1.4rem;
+}
+
+.mentorship-list {
+    padding-left: 1.2rem;
+    margin-bottom: 2rem;
+    color: #4B5563;
+    font-size: 0.95rem;
+}
+
+.mentorship-list li {
+    margin-bottom: 0.5rem;
+}
+
+.mentorship-cta {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    background-color: #3F6212;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.featured {
+    border: 2px solid #3F6212;
+}
+
 
 
 /* SEPARADORES SUAVES */
@@ -214,54 +296,31 @@ hr {
     </ul>
   </div>
 </section>
-<section class="section">
-  <div class="section-bg">
-    <h2 class="mentorship-title">Mentorías</h2>
+<section class="section mentorship-section">
+  <h2 class="mentorship-title">Mentorías</h2>
 
-    <div class="mentorship-grid">
+  <div class="mentorship-grid">
 
-      <!-- Mentoría Base -->
-      <div class="mentorship-card">
-        <h3>Mentoría Base</h3>
-        <p class="mentorship-subtitle">Ideal para iniciar en datos</p>
-        <p class="price">$150 USD · 1 mes</p>
-
-        <ul>
-          <li>2 sesiones 1:1 de 45 min</li>
-          <li>Roadmap personalizado</li>
-          <li>Revisión de CV, LinkedIn y GitHub</li>
-          <li>Cursos y proyectos recomendados</li>
-          <li>Seguimiento limitado</li>
-        </ul>
-
-        <a href="mailto:contacto.yamiletlh@gmail.com" class="mentorship-cta">
-          Quiero esta mentoría
-        </a>
+    <!-- Mentoría Base -->
+    <div class="mentorship-card">
+      <div class="mentorship-header">
+        <span class="mentorship-tag">Mentoría Base</span>
+        <div class="mentorship-price">$150 USD</div>
       </div>
 
-      <!-- Mentoría Pro -->
-      <div class="mentorship-card featured">
-        <h3>Mentoría Pro</h3>
-        <p class="mentorship-subtitle">Transición o crecimiento profesional</p>
-        <p class="price">$450 USD · 3 meses</p>
+      <p class="mentorship-desc">
+        Ideal para iniciar en datos y construir una ruta clara.
+      </p>
 
-        <ul>
-          <li>Sesiones semanales o quincenales</li>
-          <li>Roadmap evolutivo</li>
-          <li>Revisión de proyectos</li>
-          <li>Simulación de entrevistas</li>
-          <li>Estrategia de aplicación a vacantes</li>
-          <li>Seguimiento continuo</li>
-        </ul>
+      <ul class="mentorship-list">
+        <li>2 sesiones 1:1 (45 min)</li>
+        <li>Roadmap personalizado</li>
+        <li>Revisión de CV, LinkedIn y GitHub</li>
+        <li>Cursos y proyectos recomendados</li>
+        <li>Seguimiento limitado</li>
+      </ul>
 
-        <a href="mailto:contacto.yamiletlh@gmail.com" class="mentorship-cta">
-          Aplicar a mentoría
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
+      <a href="mailto:contact
 
   <div class="section-bg">
     <div class="section-title">Recursos útiles</div>
