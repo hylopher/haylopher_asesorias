@@ -50,6 +50,41 @@ h2 {
     margin-top: 2.8rem;
     margin-bottom: 1rem;
 }
+        /* ===== Recursos útiles ===== */
+
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .resource-card {
+        border: 1px solid #E5E7EB;
+        border-radius: 10px;
+        padding: 1.2rem;
+        text-decoration: none;
+        background-color: #FFFFFF;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .resource-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .resource-title {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #3F6212; /* verde olivo */
+        margin-bottom: 0.4rem;
+    }
+
+    .resource-description {
+        font-size: 0.9rem;
+        color: #4B5563;
+        line-height: 1.4;
+    }
 
 
 /* PÁRRAFOS */
@@ -175,16 +210,55 @@ hr {
 <section class="section">
   <div class="section-bg">
     <div class="section-title">Recursos útiles</div>
-    <div class="section-content">
-      <a href="AQUI_LINK_CERTIFICACIONES">Certificaciones y cursos</a><br>
-      <a href="AQUI_LINK_DATA_ENGINEER">Data Engineering Handbook</a><br>
-      <a href="AQUI_LINK_DATA_ANALYST">Data Analyst Handbook</a><br>
-      <a href="AQUI_LINK_DASHBOARDS">Demo de dashboards</a><br>
-      <a href="AQUI_LINK_INSTAGRAM">Instagram</a><br>
-      <a href="AQUI_LINK_LINKEDIN">LinkedIn</a>
+
+    <div class="resources-grid">
+
+      <a class="resource-card" href="AQUI_LINK_CERTIFICACIONES" target="_blank">
+        <div class="resource-title">Certificaciones y cursos</div>
+        <div class="resource-description">
+          Recomendaciones para iniciar o fortalecer tu perfil en datos.
+        </div>
+      </a>
+
+      <a class="resource-card" href="AQUI_LINK_DATA_ENGINEER" target="_blank">
+        <div class="resource-title">Data Engineering Handbook</div>
+        <div class="resource-description">
+          Guía práctica para quienes buscan crecer como data engineers.
+        </div>
+      </a>
+
+      <a class="resource-card" href="AQUI_LINK_DATA_ANALYST" target="_blank">
+        <div class="resource-title">Data Analyst Handbook</div>
+        <div class="resource-description">
+          Fundamentos, herramientas y enfoque para analistas de datos.
+        </div>
+      </a>
+
+      <a class="resource-card" href="AQUI_LINK_DASHBOARDS" target="_blank">
+        <div class="resource-title">Dashboards y proyectos</div>
+        <div class="resource-description">
+          Ejemplos de visualización y proyectos prácticos.
+        </div>
+      </a>
+
+      <a class="resource-card" href="AQUI_LINK_LINKEDIN" target="_blank">
+        <div class="resource-title">LinkedIn</div>
+        <div class="resource-description">
+          Contenido sobre carrera, datos y crecimiento profesional.
+        </div>
+      </a>
+
+      <a class="resource-card" href="AQUI_LINK_INSTAGRAM" target="_blank">
+        <div class="resource-title">Instagram</div>
+        <div class="resource-description">
+          Tips rápidos, reflexiones y contenido sobre el mundo tech.
+        </div>
+      </a>
+
     </div>
   </div>
 </section>
+
 <footer class="footer">
   © 2026 · Haylen Yamilet LH
 </footer>
