@@ -290,36 +290,51 @@ li::before {
     margin-bottom: 0.8rem;
 }
 
+/* Contenedor de redes centrado */
 .hero-socials {
   margin-top: 20px;
   display: flex;
-  gap: 10px; /* espacio entre botones */
+  justify-content: center; /* centra horizontalmente */
+  gap: 15px; /* espacio entre botones */
 }
 
+/* Botones generales */
 .social-btn {
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   color: white;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
+/* Efecto hover */
+.social-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Estilos por red */
 .social-btn.linkedin {
-  background-color: #0077B5; /* azul LinkedIn */
+  background-color: #0077B5;
 }
-
 .social-btn.linkedin:hover {
   background-color: #005983;
 }
 
 .social-btn.instagram {
-  background-color: #E1306C; /* rosa/rojo Instagram */
+  background-color: #E1306C;
 }
-
 .social-btn.instagram:hover {
   background-color: #b92a57;
 }
+
+.social-btn.tiktok {
+  background-color: #000000;
+}
+.social-btn.tiktok:hover {
+  background-color: #111111;
+}
+
 
 
 
@@ -354,7 +369,7 @@ hr {
     </style>
 </head>
 <body>
-  <section class="hero">
+ <section class="hero">
   <h1 class="hero-title">Guía estratégica para tu carrera en datos</h1>
   <p class="hero-subtitle">
     Claridad, foco y acompañamiento personalizado
@@ -363,13 +378,16 @@ hr {
     Asesorías 1:1 · Mentorías
   </p>
 
-  <!-- Botones de redes sociales -->
+  <!-- Botones de redes sociales centrados -->
   <div class="hero-socials">
     <a href="https://www.linkedin.com/in/tu-perfil/" target="_blank" class="social-btn linkedin">
       LinkedIn
     </a>
     <a href="https://www.instagram.com/tu-perfil/" target="_blank" class="social-btn instagram">
       Instagram
+    </a>
+    <a href="https://www.tiktok.com/@tu-perfil/" target="_blank" class="social-btn tiktok">
+      TikTok
     </a>
   </div>
 </section>
