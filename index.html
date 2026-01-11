@@ -166,13 +166,48 @@ li::before {
     color: #111827;
 }
 
+/* Grid responsive para mentorías */
 .mentorship-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en desktop */
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
+
+/* Media query para tablets y móviles */
+@media (max-width: 900px) {
+    .mentorship-grid {
+        grid-template-columns: 1fr; /* 1 columna en tablets/móviles */
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Ajuste de padding dentro de cada card en móviles */
+@media (max-width: 600px) {
+    .mentorship-card {
+        padding: 1.5rem;
+    }
+
+    .mentorship-price {
+        font-size: 1.8rem; /* un poco más pequeño */
+    }
+
+    .mentorship-desc {
+        font-size: 0.95rem;
+    }
+
+    .mentorship-list li {
+        font-size: 0.9rem;
+    }
+
+    .mentorship-cta {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
 
 .mentorship-card {
     background-color: #FFFFFF;
