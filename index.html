@@ -290,6 +290,37 @@ li::before {
     margin-bottom: 0.8rem;
 }
 
+.hero-socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px; /* espacio entre botones */
+}
+
+.social-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s;
+}
+
+.social-btn.linkedin {
+  background-color: #0077B5; /* azul LinkedIn */
+}
+
+.social-btn.linkedin:hover {
+  background-color: #005983;
+}
+
+.social-btn.instagram {
+  background-color: #E1306C; /* rosa/rojo Instagram */
+}
+
+.social-btn.instagram:hover {
+  background-color: #b92a57;
+}
+
 
 
 
@@ -323,7 +354,7 @@ hr {
     </style>
 </head>
 <body>
-    <section class="hero">
+  <section class="hero">
   <h1 class="hero-title">Guía estratégica para tu carrera en datos</h1>
   <p class="hero-subtitle">
     Claridad, foco y acompañamiento personalizado
@@ -331,7 +362,18 @@ hr {
   <p class="hero-meta">
     Asesorías 1:1 · Mentorías
   </p>
+
+  <!-- Botones de redes sociales -->
+  <div class="hero-socials">
+    <a href="https://www.linkedin.com/in/tu-perfil/" target="_blank" class="social-btn linkedin">
+      LinkedIn
+    </a>
+    <a href="https://www.instagram.com/tu-perfil/" target="_blank" class="social-btn instagram">
+      Instagram
+    </a>
+  </div>
 </section>
+
 
 <section class="about">
   <p class="about-eyebrow">Sobre mí</p>
